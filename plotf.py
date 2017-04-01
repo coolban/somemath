@@ -19,7 +19,7 @@ plt.plot(x,y,label='1/(x*x+1)',color='red',linewidth=2)
 plt.show()
 
 
-def lms(f,n,start,end):
+def rms(f,n,start,end):
 	piece = (end - start)*1.0/n
 	s = 0
 	x = start
@@ -28,7 +28,7 @@ def lms(f,n,start,end):
 		s = s + f(x)
 	return s * piece
 
-def rms(f,n,start,end):
+def lms(f,n,start,end):
 	piece = (end - start)*1.0/n
 	s = 0
 	x = start
